@@ -9,9 +9,8 @@ import pyttsx3
 import pygame
 import time
 
-
 # Set your OpenAI API key here
-openai.api_key = "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"
+openai.api_key_path = '.key'
 
 class VoiceAssistantApp:
     from process_audio import process_audio
