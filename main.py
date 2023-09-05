@@ -2,9 +2,11 @@ import speech_recognition as sr
 from gtts import gTTS
 import os
 import openai
+from dotenv import load_dotenv
+load_dotenv('.env')
 
 # Set your OpenAI API key here
-openai.api_key = "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"
+openai.api_key = OPENAI_API_KEY
 
 def capture_speech():
     recognizer = sr.Recognizer()
